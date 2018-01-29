@@ -1,0 +1,37 @@
+{
+	"typescript.check.npmIsInstalled": false,
+
+	//색상값
+	"editor.tokenColorCustomizations": {
+		"strings": "#bb8f31",
+		// "functions": "#bbb",
+		// "keywords": "#79abff",
+		// "variables": "#bbb",
+		// "types": "#c38705",
+		"numbers": "#ddd"
+	},
+
+	//open in browser 옵션 변경
+	"open-in-browser.default": "chrome",
+
+	//기본옵션 변경
+	"editor.wordWrap": "on",
+	"editor.links": false,
+	"editor.emptySelectionClipboard": false,
+	"window.restoreWindows": "none",
+	"explorer.sortOrder": "modified",
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false,
+	"git.ignoreMissingGitWarning": true,
+	"window.zoomLevel": 0,
+	"editor.renderWhitespace": "boundary",
+	"workbench.colorTheme": "One Monokai Darker",
+	"editor.hover": false,
+	"workbench.editor.enablePreview": false,
+	"workbench.startupEditor": "newUntitledFile",
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+	"team.showWelcomeMessage": false,
+	"git.autofetch": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false
+}
