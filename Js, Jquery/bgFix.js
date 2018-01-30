@@ -16,3 +16,7 @@ var bgFixFunc = { // 화면 고정 함수
 		$(window).scrollTop(bgFixFunc.default.winTop); // 스크롤 원위치
 	}
 };
+
+//호출방법
+bgFixFunc.fix(); // 위치고정함수 호출
+bgFixFunc.cancel(); // 고정해제함수 호출
