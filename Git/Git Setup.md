@@ -1,4 +1,4 @@
-#Github for VSCode
+# Github for VSCode
 
 __로컬 저장소를 복제(clone)하려면 아래 명령을 실행하세요.__
 <pre>$ git clone /로컬/저장소/경로</pre>
