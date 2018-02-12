@@ -12,26 +12,26 @@
 </pre>
 
 ~~~javascript
-	var lpayLayerFlag = true, // 레이어 컨트롤 함수
-		lpayLayerFunc = function(){
-			dafaultSet = {
-				target : $('.lpay-layer-wrap')
+var lpayLayerFlag = true, // 레이어 컨트롤 함수
+	lpayLayerFunc = function(){
+		dafaultSet = {
+			target : $('.lpay-layer-wrap')
+		},
+		_lpayLayerFunc = {
+			open : function(){
+				dafaultSet.target.addClass('active'); // 레이어 켬
+				lpayLayerFlag = false;
+				bgFixFunc.fix(); // 화면고정
+				$('body').append('<div class="lpay-dim"></div>'); // 딤 추가
 			},
-			_lpayLayerFunc = {
-				open : function(){
-					dafaultSet.target.addClass('active'); // 레이어 켬
-					lpayLayerFlag = false;
-					bgFixFunc.fix(); // 화면고정
-					$('body').append('<div class="lpay-dim"></div>'); // 딤 추가
-				},
-				close : function(){
-					dafaultSet.target.removeClass('active'); // 레이어 끔
-					lpayLayerFlag = true;
-					bgFixFunc.cancel(); // 화면고정 해제
-					$('.lpay-dim').remove(); // 딤삭제
-				}
-			};
-		
-		(lpayLayerFlag) ? _lpayLayerFunc.open() : _lpayLayerFunc.close();
-	}
+			close : function(){
+				dafaultSet.target.removeClass('active'); // 레이어 끔
+				lpayLayerFlag = true;
+				bgFixFunc.cancel(); // 화면고정 해제
+				$('.lpay-dim').remove(); // 딤삭제
+			}
+		};
+	
+	(lpayLayerFlag) ? _lpayLayerFunc.open() : _lpayLayerFunc.close();
+}
 ~~~
