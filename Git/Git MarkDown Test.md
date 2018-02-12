@@ -11,7 +11,7 @@
 >>>This is a third blockqute.
 </pre>
 
-<pre>
+~~~javascript
 	var lpayLayerFlag = true, // 레이어 컨트롤 함수
 		lpayLayerFunc = function(){
 			dafaultSet = {
@@ -34,4 +34,4 @@
 		
 		(lpayLayerFlag) ? _lpayLayerFunc.open() : _lpayLayerFunc.close();
 	}
-</pre>
+~~~
