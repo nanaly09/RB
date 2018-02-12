@@ -13,9 +13,27 @@
 
 <pre>
 	<code>
-	<dl>
-		<dt>주문금액</dt>
-		<dd class="equal-w"><span id="totalprice_11_">16,300</span><span class="won">원</span></dd>
-	</dl>
+	var lpayLayerFlag = true, // 레이어 컨트롤 함수
+		lpayLayerFunc = function(){
+			dafaultSet = {
+				target : $('.lpay-layer-wrap')
+			},
+			_lpayLayerFunc = {
+				open : function(){
+					dafaultSet.target.addClass('active'); // 레이어 켬
+					lpayLayerFlag = false;
+					bgFixFunc.fix(); // 화면고정
+					$('body').append('<div class="lpay-dim"></div>'); // 딤 추가
+				},
+				close : function(){
+					dafaultSet.target.removeClass('active'); // 레이어 끔
+					lpayLayerFlag = true;
+					bgFixFunc.cancel(); // 화면고정 해제
+					$('.lpay-dim').remove(); // 딤삭제
+				}
+			};
+		
+		(lpayLayerFlag) ? _lpayLayerFunc.open() : _lpayLayerFunc.close();
+	}
 	</code>
 </pre>
