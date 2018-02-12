@@ -12,7 +12,6 @@
 </pre>
 
 <pre>
-	<code>
 	var lpayLayerFlag = true, // 레이어 컨트롤 함수
 		lpayLayerFunc = function(){
 			dafaultSet = {
@@ -35,5 +34,4 @@
 		
 		(lpayLayerFlag) ? _lpayLayerFunc.open() : _lpayLayerFunc.close();
 	}
-	</code>
 </pre>
