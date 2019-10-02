@@ -26,7 +26,12 @@
 		// "keywords": "#79abff",
 		// "variables": "#bbb",
 		// "types": "#c38705",
-		"numbers": "#ddd"
+		"numbers": "#ddd",
+	},
+	"workbench.colorCustomizations": {
+		"statusBar.background" : "#1A1A1A", 
+		"statusBar.noFolderBackground" : "#212121", 
+		"statusBar.debuggingBackground": "#263238" 
 	},
 
 	"workbench.colorTheme": "One Monokai Darker",
@@ -100,6 +105,7 @@
 	},
 	"svn.enableProposedApi": "none",
 	"vsicons.dontShowNewVersionMessage": true,
+	"workbench.iconTheme": "vscode-icons",
 
 	
 }
