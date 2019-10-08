@@ -1,6 +1,6 @@
 ###MAP TO ANCHOR
 
-'''html
+```html
 <div class="header">MAP TO ANCHOR</div>
 <div class="wrap">
 	<div class="original-side">
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 </div>
-'''
+```
 
-'''css
+```css
 html {font-size:20px; font-family:'NanumGothic';}
 body {background:#ECEFF2; overflow-y:scroll;}
 .header {padding:20px; font-size:20px; color:#dddedf; background:#263238;}
@@ -45,9 +45,9 @@ body {background:#ECEFF2; overflow-y:scroll;}
 .wrap .result-side .txt-area .option-wrap {position:absolute; top:5px; right:20px;}
 .wrap .result-side .txt-area input[type='radio']:checked + label {color:#dddedf; background:#263238;}
 .wrap .result-side .txt-area label {display:inline-block; padding:5px 10px; border:1px solid #263238; font-size:20px; background:#fff; cursor:pointer;
-'''
+```
 
-'''javascript
+```javascript
 $(function(){
   var currentOption = localStorage.getItem('resultOption');
 
@@ -145,4 +145,4 @@ function calRem($this, thisName, newImage){
     $this.closest('.hasmap-wrap').append('<a href="' + thisHref + '" style="' + 'left:' + calLeft + '; top:' + calTop + '; width:' + calWidth + '; height:' + calheight + ';">' + thisAlt + '</a>'); // a태그 생성
   });
 }
-'''
+```
