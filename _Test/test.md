@@ -1,5 +1,6 @@
-###MAP TO ANCHOR
+## MAP TO ANCHOR
 
+### HTML
 ```html
 <div class="header">MAP TO ANCHOR</div>
 <div class="wrap">
@@ -27,7 +28,7 @@
 	</div>
 </div>
 ```
-
+### CSS
 ```css
 html {font-size:20px; font-family:'NanumGothic';}
 body {background:#ECEFF2; overflow-y:scroll;}
@@ -46,7 +47,7 @@ body {background:#ECEFF2; overflow-y:scroll;}
 .wrap .result-side .txt-area input[type='radio']:checked + label {color:#dddedf; background:#263238;}
 .wrap .result-side .txt-area label {display:inline-block; padding:5px 10px; border:1px solid #263238; font-size:20px; background:#fff; cursor:pointer;
 ```
-
+### Javascript
 ```javascript
 $(function(){
   var currentOption = localStorage.getItem('resultOption');
