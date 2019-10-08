@@ -32,7 +32,7 @@
 ```css
 html {font-size:20px; font-family:'NanumGothic';}
 body {background:#ECEFF2; overflow-y:scroll;}
-.header {padding:20px; font-size:20px; color:#dddedf; background:#263238;}
+.header {padding:20px;  font-size:20px; color:#dddedf; background:#263238;}
 .wrap {overflow:hidden;}
 .wrap > div {float:left; width:48.5%; padding:1%;}
 .wrap > div:first-child {padding-right:0;}
